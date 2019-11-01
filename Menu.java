@@ -8,32 +8,32 @@ class Menu{
    int option = 0;
    int indexPersons = 0;
          
-            do{
+      do{
+         
+         option = Menu(indexPersons);
+         
+         switch(option){
+         case 1:
+            Print();
+            break;
             
-            option = Menu(indexPersons);
+         case 2:
+            break;
             
-            switch(option){
-            case 1:
-               Print();
-               break;
-               
-            case 2:
-               break;
-               
-            case 3:
-                  break;
-       
-            case 4:
-                  break;
-                    
-             case 5:
-               break;
-               
-            default:
-            System.out.println("You need to insert a valid option!");
-            }
-      
-         }while(option != 5);
+         case 3:
+            break;
+    
+         case 4:
+            break;
+                 
+          case 5:
+            break;
+            
+         default:
+         System.out.println("You need to insert a valid option!");
+         }
+   
+      }while(option != 5);
          
    }
       
@@ -62,10 +62,5 @@ class Menu{
    static void Print() {
       
       System.out.println("*****Hello World!*****\n");
-
-   }
-
-     
-     
-     
+   } 
 }
